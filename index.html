@@ -2,9 +2,8 @@
 <html>
 <head>
     <title>Card game</title>
-    <link rel="stylesheet" href="./cards.css">
+    <link rel="stylesheet" href="./cards-2.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;700&display=swap');
     </style>
 </head>
@@ -12,7 +11,12 @@
     <div class="main">
         <div class="card-hand" id="opponent-hand"></div>
         <div class="outer-field">
-            <div class="play-field" id="field"></div>
+            <div class="action-menu">
+            </div>
+            <div class="play-field" id="field">
+                <div id="field"></div>
+                <div id="field-graphics"></div>
+            </div>
             <div class="action-menu" id="actions">
                 <div onclick="gameStart();" id="actions-start">start</div>
                 <div onclick="getHints();" id="actions-hint">how to</div>
@@ -21,7 +25,8 @@
             </div>
         </div>
         <div class="card-hand" id="player-hand"></div>
+        <a style="font-size:0.3em; color:black; text-decoration:none; background-color:rgba(0,127,127,0.5);" href="https://icons8.com/">Card symbols by Icons8</a>
     </div>
-    <script src="./cards.js"></script>
+    <script src="./cards-2.js"></script>
 </body>
 </html>
